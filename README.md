@@ -13,6 +13,25 @@ Many phones and websites already include support features, but users may still s
 - make help-seeking feel normal and low-pressure
 - protect confidence and autonomy during digital learning
 
+## Target users
+
+- older adults learning unfamiliar phone or web tasks
+- low-digital-literacy users who need patient guidance
+- users who may avoid asking for help because they feel embarrassed or dependent
+
+## Evaluation plan
+
+The prototype could be evaluated through a small behavioral study comparing a standard instruction interface with the AccessGuide AI flow.
+
+Possible measures:
+
+- task completion rate
+- time on task
+- self-reported confidence
+- perceived cognitive load
+- help-seeking frequency
+- qualitative comments about confusion, autonomy, and trust
+
 ## Portfolio purpose
 
 This project is designed to show research-driven interaction design: turning a human-centered research question into a testable interface prototype.

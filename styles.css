@@ -38,7 +38,8 @@ body {
 
 .hero,
 .workspace,
-.notes {
+.notes,
+.band {
   display: grid;
   gap: 22px;
 }
@@ -53,7 +54,8 @@ body {
 .preview-card,
 .guide,
 .insights,
-.notes > div {
+.notes > div,
+.band > div {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -239,6 +241,7 @@ input[type="range"] {
 .workspace {
   grid-template-columns: 1.15fr 0.85fr;
   align-items: start;
+  margin-top: 22px;
 }
 
 .guide {
@@ -363,6 +366,45 @@ input[type="range"] {
   margin-bottom: 14px;
 }
 
+.band {
+  grid-template-columns: 1.1fr 0.9fr 0.9fr;
+  margin-bottom: 22px;
+}
+
+.band > div {
+  padding: 24px;
+}
+
+.band h2 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.band p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.principles {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.principles li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f7faff;
+  border: 1px solid #e1e9f7;
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
 .notes {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 22px;
@@ -379,7 +421,8 @@ input[type="range"] {
 
   .hero,
   .workspace,
-  .notes {
+  .notes,
+  .band {
     grid-template-columns: 1fr;
   }
 
