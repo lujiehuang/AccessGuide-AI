@@ -161,12 +161,9 @@ function transformBody(body) {
 
 function renderSteps() {
   steps.innerHTML = "";
-  const paceMultiplier = state.pace === 1 ? 0.9 : state.pace === 2 ? 1 : 1.1;
 
   state.scenario.steps.forEach((step, index) => {
     const item = document.createElement("li");
-    item.style.transform = `scale(${paceMultiplier})`;
-    item.style.transformOrigin = "left top";
     item.innerHTML = `
       <strong>Step ${index + 1}: ${step.title}</strong>
       <p>${transformBody(step.body)}</p>

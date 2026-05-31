@@ -22,33 +22,66 @@
     <main class="page">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Accessibility HCI prototype</p>
+          <p class="eyebrow">Accessibility HCI case study</p>
           <h1>AccessGuide AI</h1>
           <p class="lede">
-            A research prototype for helping older adults and low-digital-literacy users
-            understand unfamiliar phone tasks with calm, step-by-step guidance.
+            A prototype for helping older adults and low-digital-literacy users complete
+            unfamiliar phone tasks with calmer explanations, smaller steps, and built-in help.
           </p>
 
-          <div class="stats" aria-label="Prototype highlights">
+          <div class="storyline" aria-label="Project summary">
             <div>
-              <strong>4</strong>
-              <span>common tasks</span>
+              <span>Problem</span>
+              <p>Support exists, but people often cannot find it, understand it, or ask for help with confidence.</p>
             </div>
             <div>
-              <strong>3</strong>
-              <span>support modes</span>
+              <span>Design idea</span>
+              <p>Turn one confusing task into a guided interaction with plain language and reversible actions.</p>
             </div>
             <div>
-              <strong>1</strong>
-              <span>interaction model</span>
+              <span>What to evaluate</span>
+              <p>Whether the interface reduces hesitation, confusion, and help-seeking friction.</p>
             </div>
           </div>
         </div>
 
-        <aside class="control-panel" aria-label="Interactive settings">
-          <div class="panel-header">
-            <h2>Try a task</h2>
-            <p>Change the flow to see how the guidance adapts.</p>
+        <aside class="preview-card" aria-label="Prototype preview">
+          <div class="preview-top">
+            <div>
+              <p class="eyebrow">Live prototype</p>
+              <h2 id="scenarioTitle">Open Accessibility Settings</h2>
+            </div>
+            <span id="paceLabel" class="pill">Balanced</span>
+          </div>
+
+          <p id="scenarioIntro" class="section-copy"></p>
+
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <span>Guided task</span>
+                <strong id="outputTitle">Support Script</strong>
+              </div>
+              <div class="phone-body">
+                <p id="outputText"></p>
+                <div class="meter">
+                  <span id="meterFill"></span>
+                </div>
+                <p id="meterText" class="meter-text"></p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="workspace">
+        <div class="guide">
+          <div class="section-head">
+            <p class="eyebrow">Interaction design</p>
+            <h2>How the prototype works</h2>
+            <p class="section-copy">
+              Choose a task, change the explanation pace, and see how the support adapts for different levels of confidence.
+            </p>
           </div>
 
           <div class="field">
@@ -60,27 +93,17 @@
             <label>Explanation pace</label>
             <div class="control-row">
               <input id="pace" type="range" min="1" max="3" step="1" value="2" />
-              <span id="paceLabel" class="pill">Balanced</span>
+              <span class="hint">Slower pace = more guidance</span>
             </div>
           </div>
 
           <div class="field">
             <label>Support options</label>
             <div class="toggle-grid">
-              <label class="toggle"><input id="simpleLanguage" type="checkbox" checked /> Simple language</label>
-              <label class="toggle"><input id="showGlossary" type="checkbox" checked /> Explain terms</label>
+              <label class="toggle"><input id="simpleLanguage" type="checkbox" checked /> Plain language</label>
+              <label class="toggle"><input id="showGlossary" type="checkbox" checked /> Explain unfamiliar terms</label>
               <label class="toggle"><input id="helpScript" type="checkbox" checked /> Help-seeking script</label>
             </div>
-          </div>
-        </aside>
-      </section>
-
-      <section class="workspace">
-        <div class="guide">
-          <div class="section-head">
-            <p class="eyebrow">Guided flow</p>
-            <h2 id="scenarioTitle">Open Accessibility Settings</h2>
-            <p id="scenarioIntro" class="section-copy"></p>
           </div>
 
           <ol id="steps" class="steps" aria-live="polite"></ol>
@@ -88,44 +111,38 @@
 
         <div class="insights">
           <div class="insight-box">
-            <p class="eyebrow">What this shows</p>
-            <h3>Research-driven interaction design</h3>
+            <p class="eyebrow">Why it matters</p>
+            <h3>Older adults should not need to guess how to ask for help.</h3>
             <p>
-              The prototype focuses on task decomposition, cognitive load, confidence,
-              and help-seeking rather than visual decoration.
+              The interface is designed around task friction, confidence, and autonomy rather than visual polish alone.
             </p>
           </div>
 
           <div class="insight-box">
-            <p class="eyebrow">Output</p>
-            <h3 id="outputTitle">Support Script</h3>
-            <p id="outputText"></p>
+            <p class="eyebrow">Research notes</p>
+            <h3>Good fit for user studies</h3>
+            <p>
+              This prototype can be used to test whether clearer structure, simpler language, and reversible steps improve comfort and completion.
+            </p>
           </div>
 
           <div class="insight-box compact">
-            <p class="eyebrow">Confidence signal</p>
-            <div class="meter">
-              <span id="meterFill"></span>
-            </div>
-            <p id="meterText" class="meter-text"></p>
+            <p class="eyebrow">Design goal</p>
+            <p class="goal-line">
+              Reduce confusion, protect confidence, and make help-seeking feel normal.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="notes">
         <div>
-          <p class="eyebrow">Prototype framing</p>
-          <p>
-            Built to demonstrate accessibility-oriented interaction design for PhD applications,
-            with a focus on older adults, clear task structure, and usable AI support.
-          </p>
+          <p class="eyebrow">Portfolio use</p>
+          <p>This page is meant to show that I can turn a research question into a clear, testable interaction design prototype.</p>
         </div>
         <div>
-          <p class="eyebrow">Research fit</p>
-          <p>
-            Useful for showing study design thinking, user-centered problem framing, and the
-            ability to turn a research idea into a working interface.
-          </p>
+          <p class="eyebrow">Target fit</p>
+          <p>The framing is intentionally aligned with accessibility HCI, older adults, and evidence-based interface design.</p>
         </div>
       </section>
     </main>

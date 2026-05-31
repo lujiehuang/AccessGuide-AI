@@ -50,7 +50,7 @@ body {
 }
 
 .hero-copy,
-.control-panel,
+.preview-card,
 .guide,
 .insights,
 .notes > div {
@@ -97,45 +97,47 @@ h1 {
   color: var(--muted);
 }
 
-.stats {
+.storyline {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin-top: 28px;
 }
 
-.stats div {
+.storyline div {
   padding: 16px;
   border-radius: 14px;
   background: #fff;
   border: 1px solid #e3ebf8;
 }
 
-.stats strong {
+.storyline span {
   display: block;
-  margin-bottom: 4px;
-  font-size: 1.6rem;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--blue-dark);
 }
 
-.stats span {
+.storyline p {
+  margin-bottom: 0;
   font-size: 0.92rem;
   color: var(--muted);
+  line-height: 1.55;
 }
 
-.control-panel {
+.preview-card {
   padding: 28px;
 }
 
-.panel-header h2,
+.preview-top,
 .section-head h2,
 .insight-box h3 {
   margin-bottom: 8px;
-  font-size: 1.2rem;
-  letter-spacing: -0.02em;
 }
 
-.panel-header p,
 .section-copy,
 .insight-box p,
 .notes p {
@@ -187,6 +189,11 @@ h1 {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.hint {
+  font-size: 0.88rem;
+  color: var(--muted);
 }
 
 input[type="range"] {
@@ -305,6 +312,57 @@ input[type="range"] {
   font-size: 0.92rem;
 }
 
+.goal-line {
+  margin-bottom: 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.preview-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.preview-card h2 {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.phone-shell {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #eef4ff, #f9fbff);
+  border: 1px solid #d8e2f5;
+}
+
+.phone-screen {
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #dfe7f4;
+}
+
+.phone-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.phone-header strong {
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.phone-body p:first-child {
+  margin-bottom: 14px;
+}
+
 .notes {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 22px;
@@ -324,18 +382,26 @@ input[type="range"] {
   .notes {
     grid-template-columns: 1fr;
   }
+
+  .storyline {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
   .hero-copy,
-  .control-panel,
+  .preview-card,
   .guide,
   .insights,
   .notes > div {
     padding: 20px;
   }
 
-  .stats {
+  .preview-top {
+    flex-direction: column;
+  }
+
+  .storyline {
     grid-template-columns: 1fr;
   }
 }

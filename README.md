@@ -1,19 +1,18 @@
 # AccessGuide AI
 
-A small interaction design prototype focused on accessibility HCI for older adults and low-digital-literacy users.
+AccessGuide AI is a small accessibility HCI case study and interaction prototype for older adults and low-digital-literacy users.
 
-## What it shows
+## Research problem
 
-- task decomposition
-- calm step-by-step guidance
-- help-seeking support
-- confidence-oriented interaction design
+Many phones and websites already include support features, but users may still struggle to find them, understand them, or ask for help without embarrassment. This prototype explores how an AI-mediated guide could make unfamiliar digital tasks feel clearer and more manageable.
 
-## Why it is useful for PhD applications
+## Interaction design focus
 
-This project is meant to demonstrate research-driven interaction design rather than polished visual branding. It shows how a research question can become a working prototype that supports user-centered evaluation.
+- break confusing tasks into smaller steps
+- use plain language and optional term explanations
+- make help-seeking feel normal and low-pressure
+- protect confidence and autonomy during digital learning
 
-## Local use
+## Portfolio purpose
 
-Open `index.html` in a browser, or deploy the folder to GitHub Pages.
-
+This project is designed to show research-driven interaction design: turning a human-centered research question into a testable interface prototype.
