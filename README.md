@@ -32,6 +32,19 @@ Possible measures:
 - help-seeking frequency
 - qualitative comments about confusion, autonomy, and trust
 
+## Possible study design
+
+Participants could be asked to complete common phone or web tasks under two conditions:
+
+1. standard written instructions
+2. AccessGuide AI's step-by-step guided flow
+
+The comparison would examine whether guided explanations improve confidence, reduce hesitation, and make users more willing to seek help when needed.
+
+## Expected contribution
+
+The project frames accessibility as an interaction problem, not only a feature problem. It asks how interface structure, explanation style, and help-seeking support can make existing digital functions more discoverable and usable.
+
 ## Portfolio purpose
 
 This project is designed to show research-driven interaction design: turning a human-centered research question into a testable interface prototype.
